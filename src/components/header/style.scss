@@ -10,3 +10,16 @@
         padding: 0.5rem; // Düğme boyutunu artırmak için padding ekleyebilirsiniz
     }
 }
+.imageContainer {
+    display: flex;
+    justify-content: center; /* Ortalamak için */
+    align-items: center; /* Ortalamak için */
+  }
+  
+  .circularImage {
+    border-radius: 50%; /* Dairesel yapar */
+    object-fit: cover; /* Resmin düzgün bir şekilde kesilmesini sağlar */
+    width: 100px; /* İstediğiniz küçültülmüş boyut */
+    height: 100px; /* İstediğiniz küçültülmüş boyut */
+  }
+  
