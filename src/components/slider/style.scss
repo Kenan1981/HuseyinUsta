@@ -1,0 +1,36 @@
+.custom-carousel {
+    background-color: rgb(113, 117, 109) !important;
+    width: 100vw;
+    height: 80vh;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.item-spacing {
+    height: 100%;
+    position: relative;
+}
+
+.item-spacing img {
+    width: 100vh;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #fff;
+    width: 90%;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    display: block !important; /* Caption’ı her ekranda görünür yapar */
+    visibility: visible !important; /* Caption’ın görünür olmasını zorunlu kılar */
+}
