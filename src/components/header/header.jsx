@@ -3,20 +3,16 @@ import { Navbar, Nav, NavbarBrand, NavbarToggle, NavbarCollapse, NavLink } from 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'primeicons/primeicons.css';
 import "../header/style.scss";
+import Image from 'next/image';
 
 export const Header = () => {
   return (
     <Navbar className='navbar' bg="dark" variant="dark" expand="lg">
       <NavbarBrand href="#home">
-        <img 
-          src="/img/Hüseyin Usta Kamyon Tamircisi Logo.png" 
-          alt="Hüseyin Usta" 
-          style={{ 
-            width: '100px', 
-            height: '100px', 
-            borderRadius: '50%', 
-            marginRight: '10px', 
-          }}/>
+      <Image src="/img/Hüseyin Usta Kamyon Tamircisi Logo.png" alt="Description" width={500} height={300} />
+         
+        
+       
         <span className="navbar-brand-text display-5 ms-2">Hüseyin Usta</span>
       </NavbarBrand>
       <NavbarToggle className="navbar-toggle" aria-controls="basic-navbar-nav" />
